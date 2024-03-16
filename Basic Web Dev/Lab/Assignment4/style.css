@@ -1,0 +1,124 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b96cd;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container {
+    /* width: 500px; */
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* label {
+    display: block;
+    margin-bottom: 5px;
+} */
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* resize: vertical; */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+
+/* .merge {
+    display: flex;
+    gap: 10px;
+} */
+
+.form-group label {
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.form-group select {
+    width: 200px; 
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.merge {
+    display: inline-block;
+}
+
+.merge input {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-custom {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: #fff;
+    vertical-align: middle;
+    position: relative;
+}
+
+.checkbox-custom::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 16px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.checkbox-input:checked + .checkbox-custom::after {
+    transform: translate(-50%, -50%) scale(1);
+}

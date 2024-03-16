@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table and List Design</title>
+<style>
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    body {
+        background-color: #19af19;
+    }
+
+    th, td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .list-container {
+        margin-bottom: 20px;
+    }
+
+    .list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .list-item {
+        margin-bottom: 5px;
+    }
+
+    .list-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .list-item:before {
+        content: "•";
+        margin-right: 5px;
+        color: #666;
+    }
+
+    .ordered-list {
+        list-style-type: decimal;
+    }
+
+    .ordered-list-item {
+        margin-bottom: 5px;
+    }
+
+    .ordered-list-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .ordered-list-item:before {
+        content: "";
+        margin-right: 5px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <caption style="font-size: 20px; font-weight: bolder; margin-bottom: 10px;">Employee Information</caption>
+    <thead>
+        <tr>
+        
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>001</td>
+            <td>Riyad</td>
+            <td>CSE</td>
+            <td>50,000</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Akash</td>
+            <td>EEE</td>
+            <td>45,000</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Roshni</td>
+            <td>Human Resources</td>
+            <td>55,000</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Unordered List -->
+<div class="list-container">
+    <h2>Fruits (Unordered List)</h2>
+    <ul class="list">
+        <li class="list-item">Apple</li>
+        <li class="list-item">Banana</li>
+        <li class="list-item">Orange</li>
+        <li class="list-item">Grapes</li>
+    </ul>
+</div>
+
+<!-- Ordered List -->
+<div class="list-container">
+    <h2>Fruits (Ordered List)</h2>
+    <ol class="ordered-list">
+        <li class="ordered-list-item">Apple</li>
+        <li class="ordered-list-item">Banana</li>
+        <li class="ordered-list-item">Orange</li>
+        <li class="ordered-list-item">Grapes</li>
+    </ol>
+</div>
+
+</body>
+</html>

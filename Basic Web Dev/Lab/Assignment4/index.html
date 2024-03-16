@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <div class="merge">
+                <input type="text" id="name" name="name" placeholder="First Name" required>
+                <input type="text" id="name" name="name" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <div class="merge">
+                <input class="cm-em" type="email" id="email" name="email" placeholder="eg. hello@contact.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <div class="merge">
+                    <input type="tel" id="phone" name="phone" placeholder="###">
+                    <input type="tel" id="phone" name="phone" placeholder="###">
+                    <input type="tel" id="phone" name="phone" placeholder="####">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="subject">Message Subject *</label>
+                <select id="subject" name="subject">
+                    <option value="general">Other</option>
+                    <option value="support">DLD</option>
+                    <option value="billing">Algorithm</option>
+                    <option value="feedback">Data Communication</option>
+                    <option value="feedback">Networking</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <div class="merge">
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label>Verification *</label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="checkbox-input" id="robot" name="robot" required>
+                        <span class="checkbox-custom"></span>
+                        I am not a robot
+                    </label>
+                </div>
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
