@@ -1,0 +1,10 @@
+.box{
+    border: 1px solid;
+    margin: 30px;
+    padding: 30px;
+}
+.box2{
+
+    border: solid 1px;
+    display: inline;
+}
