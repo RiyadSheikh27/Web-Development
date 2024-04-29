@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            /* padding: 20px; */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1,h2,h3{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Green University of Bangladesh</h1>
+
+        <h2>Dept. of CSE</h2>
+        <h3>Web Programming Lab</h3>
+
+        <p>Study at GUB and Make Yourself Ready for 21st Century Workplaces. Green University of Bangladesh is one of the top ranked private universities in Bangladesh.</p>
+
+        <h2>Lists</h2>
+        <ul>
+            <li>Dept. of CSE</li>
+            <li>Dept. of EEE</li>
+            <li>Dept. of ENG</li>
+        </ul>
+
+        <ol>
+            <li>Tuition Fees-7lakh</li>
+            <li>Tuition Fees-6lakh</li>
+            <li>Tuition Fees-5lakh</li>
+        </ol>
+
+        <h2>Table</h2>
+        <table>
+            <caption>Product Inventory</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Product Name</th>
+                    <th colspan="2">Stock</th>
+                    <th rowspan="2">Price ($)</th>
+                </tr>
+                <tr>
+                    <th>In Stock</th>
+                    <th>Reserved</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Product A</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Product B</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Product C</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total</td>
+                    <td>60</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Link</h2>
+        <a href="https://https://www.google.com/">Google.com</a>
+
+        <h2>Image</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Green_University_of_Bangladesh_logo.svg" alt="GUB"
+            height="200">
+
+        <h2>Video</h2>
+        <video width="400" controls>
+            <source src="practice.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <footer>&copy; 2024 Shop Management System</footer>
+    </div>
+</body>
+
+</html>

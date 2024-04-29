@@ -1,0 +1,15 @@
+.background-image {
+    background-image: url("./png_20220609_001541_0000.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
